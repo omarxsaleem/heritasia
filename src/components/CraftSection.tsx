@@ -23,7 +23,7 @@ const craftItems = [
 
 export default function CraftSection() {
   return (
-    <Section className="bg-beige">
+    <Section className="bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-brick text-center mb-12">
           Our Craft
@@ -32,7 +32,7 @@ export default function CraftSection() {
           {craftItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-beige rounded-lg shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="text-4xl mb-4 text-center">{item.icon}</div>
               <h3 className="font-serif text-xl md:text-2xl font-semibold text-brick mb-4 text-center">

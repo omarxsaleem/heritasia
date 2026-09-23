@@ -1,6 +1,9 @@
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-beige-dark py-12 md:py-16 px-4 md:px-6 lg:px-8">
+    <footer
+      id="contact"
+      className="bg-beige-dark py-12 md:py-16 px-4 md:px-6 lg:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand Section */}
@@ -33,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="text-gray-600 hover:text-brick transition-colors duration-200 text-sm"
                 >
                   Contact
@@ -41,7 +44,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#faq"
+                  href="/#faq"
                   className="text-gray-600 hover:text-brick transition-colors duration-200 text-sm"
                 >
                   FAQ
@@ -55,12 +58,8 @@ export default function Footer() {
             <h3 className="font-serif text-lg font-semibold text-brick mb-4">
               Reach Us
             </h3>
-            <p className="text-gray-600 text-sm mb-2">
-              hello@heritasia.id
-            </p>
-            <p className="text-gray-600 text-sm">
-              @heritasia.id
-            </p>
+            <p className="text-gray-600 text-sm mb-2">heritasia.id@gmail.com</p>
+            <p className="text-gray-600 text-sm">@heritasia.id</p>
           </div>
         </div>
 
@@ -72,6 +71,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

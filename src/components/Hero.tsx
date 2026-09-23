@@ -1,48 +1,42 @@
 export default function Hero() {
   return (
-    <section id="home" className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-6 lg:px-8">
+    <section
+      id="home"
+      className="bg-beige pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-6 lg:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="text-center md:text-left">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-brick mb-4">
-              Heritasia
-            </h1>
-            <p className="font-serif text-xl md:text-2xl text-gray-700 mb-6 italic">
+            <h1 className="font-serif text-lg md:text-xl lg:text-4xl font-bold text-brick mb-4 leading-tight tracking-tight">
               The Indonesian Heritage Crafts' Atelier
+            </h1>
+            <p className="font-serif text-2xl md:text-2xl text-gray-700 font-bold mb-4 leading-snug">
+              Our Story
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
-              Preserving the rich tradition of Indonesian craftsmanship, one piece at a time. 
-              We connect artisans from across the archipelago with appreciators of authentic, 
-              handcrafted heritage.
+              Heritasia was created from a desire to showcase the depth and
+              diversity of Indonesia’s extraordinary artisanal heritage and to
+              highlight the communities that sustain it. Each piece represents a
+              careful fusion of regional materials and time-honored techniques.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a
-                href="#collections"
-                className="bg-brick text-beige px-8 py-3 rounded-lg font-medium hover:bg-brick-dark transition-colors duration-200 shadow-md hover:shadow-lg text-center"
-              >
-                Explore Collections
-              </a>
-              <a
-                href="#story"
-                className="border-2 border-brick text-brick px-8 py-3 rounded-lg font-medium hover:bg-brick hover:text-beige transition-all duration-200 text-center"
-              >
-                Meet Our Artisans
-              </a>
-            </div>
+            <p className="text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+              At Heritasia, we invite you to connect with the stories,
+              traditions, and hands behind every piece, preserving Indonesia’s
+              craftsmanship for generations to come.
+            </p>
           </div>
 
           {/* Right Column - Logo */}
           <div className="flex items-center justify-center">
-          <img
-                src="/heritasia-logo2.png"
-                alt="Heritasia Logo"
-                className="w-full max-w-sm h-auto object-contain"
-              />
+            <img
+              src="/artisan-story.jpg"
+              alt="Heritasia Logo"
+              className="w-full max-w-sm h-auto object-contain"
+            />
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

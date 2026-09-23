@@ -1,64 +1,54 @@
+import { Link } from 'react-router-dom'
 import Section from './Section'
-
-const collections = [
-  {
-    name: 'Cutlery Basket',
-    caption: 'Elegant rectangular woven rattan baskets with intricately carved wooden inserts, perfect for organizing and displaying your finest silverware.',
-    image: '/cutlery-basket.jpeg',
-  },
-  {
-    name: 'Tea Trays',
-    caption: 'Beautiful square rattan trays featuring textured white bases adorned with delicate pink orchid designs, ideal for serving tea in style.',
-    image: '/tea-tray.jpeg',
-  },
-  {
-    name: 'Ornate Table Lamp',
-    caption: 'Stunning table lamp with a vibrant teal-colored base featuring intricate openwork patterns and a soft off-white fabric shade.',
-    image: '/lamp.jpeg',
-  },
-]
+import { featuredCollections } from '../data/collections'
 
 export default function CollectionsSection() {
   return (
-    <Section id="collections" className="bg-white">
+    <Section id="collections" className="bg-beige">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl font-bold text-brick text-center mb-12">
-          Featured Collections
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
-          {collections.map((collection, index) => (
-            <div
-              key={index}
-              className="bg-beige rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+        <div className="mb-10 md:mb-12 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-brick mb-3">
+            Featured Collections
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            A curated selection to begin your journey through Heritasia's craft
+            offerings.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-8">
+          {featuredCollections.map((collection) => (
+            <Link
+              key={collection.title}
+              to={`/collections/${collection.slug}`}
+              className="group bg-white rounded-xl border border-beige-dark/70 overflow-hidden hover:border-brick/30 hover:shadow-md transition-all duration-300"
             >
-              <div className="aspect-square bg-beige-dark overflow-hidden">
+              <div
+                className={`aspect-[4/3] overflow-hidden ${
+                  collection.image.startsWith('/catalog/')
+                    ? 'bg-beige'
+                    : 'bg-beige-dark'
+                }`}
+              >
                 <img
                   src={collection.image}
-                  alt={collection.name}
-                  className="w-full h-full object-cover"
+                  alt={collection.title}
+                  className={
+                    collection.image.startsWith('/catalog/')
+                      ? 'w-full h-full object-contain transition-transform duration-500 group-hover:scale-105'
+                      : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
+                  }
                 />
               </div>
-              <div className="p-4 md:p-6">
-                <h3 className="font-serif text-xl font-semibold text-brick mb-2">
-                  {collection.name}
+              <div className="p-5">
+                <h3 className="font-serif text-2xl text-brick">
+                  {collection.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {collection.caption}
-                </p>
               </div>
-            </div>
+            </Link>
           ))}
-        </div>
-        <div className="text-center">
-          <a
-            href="#collections"
-            className="inline-block text-brick hover:text-brick-dark font-medium transition-colors duration-200"
-          >
-            View all collections →
-          </a>
         </div>
       </div>
     </Section>
   )
 }
-
