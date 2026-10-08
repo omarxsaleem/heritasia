@@ -34,27 +34,27 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-beige-dark py-10 md:py-16 px-4 md:px-6 lg:px-8"
+      className="bg-beige-dark py-8 md:py-12 px-4 md:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto min-w-0">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 md:items-start">
           {/* Brand Section */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <span className="font-serif text-lg font-semibold text-brick">
+            <div className="flex items-center space-x-3 mb-2">
+              <span className="font-serif text-base md:text-lg font-semibold text-brick">
                 Heritasia
               </span>
             </div>
-            <p className="text-gray-600 text-sm italic">
+            <p className="text-gray-600 text-sm italic leading-relaxed">
               Indonesia's First Fusion Crafts Atelier
             </p>
           </div>
 
           <div>
-            <h3 className="font-serif text-lg font-semibold text-brick mb-4">
+            <h3 className="font-serif text-base md:text-lg font-semibold text-brick mb-2 md:mb-3">
               Connect
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm leading-snug">
               <li>
                 <a
                   href={INSTAGRAM_HREF}
@@ -88,8 +88,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-300">
-          <p className="text-gray-500 text-sm text-center">
+        <div className="mt-6 pt-4 md:pt-5 border-t border-gray-300/70">
+          <p className="text-gray-500 text-xs md:text-sm text-center">
             © {new Date().getFullYear()} heritasia.id. All rights reserved.
           </p>
         </div>
