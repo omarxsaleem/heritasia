@@ -10,6 +10,7 @@ import {
   rattanTrayGroups,
   woodenTrayTableGroups,
 } from '../data/catalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 type CatalogProductGroup = {
   label: string
@@ -186,7 +187,13 @@ function ProductCard({
         className="flex h-full w-full min-w-0 flex-col items-stretch transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brick cursor-zoom-in"
       >
         <div className={productImageFrameClassName}>
-          <img src={imageSrc} alt={imageAlt} className={productImageClassName} />
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            loading="lazy"
+            decoding="async"
+            className={productImageClassName}
+          />
         </div>
         {name && (
           <div className={productCaptionClassName}>
@@ -213,6 +220,15 @@ export default function CollectionDetailPage() {
     setExpandedProduct(null)
   }, [])
 
+  const pageDescription =
+    collection?.description ??
+    `Explore the ${collection?.title ?? 'Heritasia'} collection—handcrafted Indonesian fusion pieces from Heritasia.`
+
+  usePageMeta(
+    collection ? `${collection.title} | Heritasia` : 'Collection | Heritasia',
+    pageDescription,
+  )
+
   if (!collection) {
     return <Navigate to="/" replace />
   }
@@ -233,8 +249,17 @@ export default function CollectionDetailPage() {
               <Link to="/" className="hover:text-brick transition-colors duration-200">
                 Home
               </Link>
-              <span>/</span>
-              <span className="text-brick">{collection.title}</span>
+              <span aria-hidden>/</span>
+              <Link
+                to="/collections"
+                className="hover:text-brick transition-colors duration-200"
+              >
+                Collections
+              </Link>
+              <span aria-hidden>/</span>
+              <span className="text-brick" aria-current="page">
+                {collection.title}
+              </span>
             </nav>
             <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brick leading-tight">
               {collection.title}

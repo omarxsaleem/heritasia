@@ -12,6 +12,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -43,10 +44,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white backdrop-blur-sm shadow-sm"
-          : "bg-white backdrop-blur-sm"
+      className={`fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm transition-all duration-300 ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto min-w-0 px-4 md:px-6 lg:px-8">

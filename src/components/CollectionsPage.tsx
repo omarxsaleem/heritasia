@@ -2,8 +2,14 @@ import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { collections } from '../data/collections'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function CollectionsPage() {
+  usePageMeta(
+    'Collections | Heritasia',
+    'Browse Heritasia collections of handcrafted Indonesian fusion crafts—from placemats and trays to lamps, bowls, and more.',
+  )
+
   return (
     <div className="min-h-screen overflow-x-clip bg-beige">
       <Navbar />
@@ -36,6 +42,8 @@ export default function CollectionsPage() {
                   <img
                     src={collection.image}
                     alt={collection.title}
+                    loading="lazy"
+                    decoding="async"
                     className={
                       collection.image.startsWith('/catalog/')
                         ? 'w-full h-full object-contain transition-transform duration-500 group-hover:scale-105'

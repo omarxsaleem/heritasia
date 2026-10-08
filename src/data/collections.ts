@@ -25,11 +25,8 @@ export interface CollectionGroup {
   title: string
   description?: string
   image: string
-  featured?: boolean
   products: CollectionProduct[]
 }
-
-const featuredSlugs = new Set(['coaster-sets', 'wooden-tray-tables'])
 
 export const collections: CollectionGroup[] = catalogCategorySlugs.map(
   (slug) => {
@@ -39,10 +36,7 @@ export const collections: CollectionGroup[] = catalogCategorySlugs.map(
       title: catalogCategoryTitle(slug),
       description: collectionDescriptions[slug],
       image: products[0]?.image ?? '/artisan-story.jpg',
-      featured: featuredSlugs.has(slug),
       products,
     }
   },
 )
-
-export const featuredCollections = collections.filter((collection) => collection.featured)

@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="flex items-center justify-center min-w-0 px-2 sm:px-0">
             <img
               src="/artisan-story.jpg"
-              alt="Heritasia Logo"
+              alt="Heritasia artisan story and craft heritage"
               className="w-full max-w-[min(100%,20rem)] sm:max-w-sm object-contain"
             />
           </div>
