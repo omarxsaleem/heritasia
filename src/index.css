@@ -5,10 +5,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
   }
   
   body {
-    @apply bg-white text-gray-900 font-sans;
+    @apply bg-white text-gray-900 font-sans overflow-x-clip;
+  }
+
+  img {
+    @apply max-w-full h-auto;
   }
   
   h1, h2, h3, h4, h5, h6 {

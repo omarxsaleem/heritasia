@@ -2,6 +2,7 @@ import {
   catalogCategorySlugs,
   catalogCategoryTitle,
   catalogProductsByCategory,
+  collectionDescriptions,
 } from './catalog'
 
 export interface CollectionProduct {
@@ -28,11 +29,7 @@ export interface CollectionGroup {
   products: CollectionProduct[]
 }
 
-const featuredSlugs = new Set([
-  'beaded-coaster-sets',
-  'floral-coaster-sets',
-  'wooden-tray-tables',
-])
+const featuredSlugs = new Set(['coaster-sets', 'wooden-tray-tables'])
 
 export const collections: CollectionGroup[] = catalogCategorySlugs.map(
   (slug) => {
@@ -40,6 +37,7 @@ export const collections: CollectionGroup[] = catalogCategorySlugs.map(
     return {
       slug,
       title: catalogCategoryTitle(slug),
+      description: collectionDescriptions[slug],
       image: products[0]?.image ?? '/artisan-story.jpg',
       featured: featuredSlugs.has(slug),
       products,

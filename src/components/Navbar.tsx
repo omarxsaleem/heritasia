@@ -49,22 +49,22 @@ export default function Navbar() {
           : "bg-white backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex items-center h-16 md:h-20">
+      <div className="max-w-7xl mx-auto min-w-0 px-4 md:px-6 lg:px-8">
+        <div className="flex items-center h-16 md:h-20 min-w-0">
           {/* Logo (Far Left, before Home) */}
           <Link
             to="/"
-            className="flex items-center cursor-pointer mr-6 md:mr-8"
+            className="flex shrink-0 items-center cursor-pointer mr-4 sm:mr-6 md:mr-8"
           >
             <img
               src="/heritasia-logo2.jpeg"
               alt="Heritasia Logo"
-              className="h-9 md:h-11 w-auto"
+              className="h-8 sm:h-9 md:h-11 w-auto"
             />
           </Link>
 
           {/* Navigation Links */}
-          <div className="flex items-center justify-start space-x-5 md:space-x-7">
+          <div className="flex min-w-0 flex-1 items-center justify-start gap-3 sm:gap-5 md:gap-7">
             <Link
               to="/"
               className="text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium"
@@ -72,24 +72,32 @@ export default function Navbar() {
               Home
             </Link>
             <div
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => setCollectionsOpen(true)}
               onMouseLeave={() => setCollectionsOpen(false)}
             >
+              <Link
+                to="/collections"
+                className="text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium"
+              >
+                Collections
+              </Link>
               <button
                 type="button"
-                className="inline-flex items-center gap-1 text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium"
+                className="ml-0.5 inline-flex items-center justify-center px-1 text-gray-700 hover:text-brick transition-colors duration-200 text-xs"
                 onClick={() => setCollectionsOpen((prev) => !prev)}
                 aria-expanded={collectionsOpen}
                 aria-haspopup="menu"
+                aria-label="Show collection links"
               >
-                Collections
-                <span className="text-xs">▾</span>
+                ▾
               </button>
               {collectionsOpen && (
                 <div className="absolute top-full left-0 pt-2 w-64 z-50">
                   <div className="bg-white border border-beige-dark rounded-xl shadow-lg py-2">
-                  {collections.map((collection) => (
+                  {[...collections]
+                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .map((collection) => (
                     <Link
                       key={collection.slug}
                       to={`/collections/${collection.slug}`}
@@ -108,7 +116,7 @@ export default function Navbar() {
               onClick={(e) => handleSectionClick(e, "contact")}
               className="text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium cursor-pointer"
             >
-              Contact
+              Contact Us
             </a>
           </div>
         </div>

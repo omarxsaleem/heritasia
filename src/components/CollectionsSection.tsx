@@ -6,17 +6,17 @@ export default function CollectionsSection() {
   return (
     <Section id="collections" className="bg-beige">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-10 md:mb-12 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-brick mb-3">
+        <div className="mb-8 md:mb-12 text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-brick mb-2 md:mb-3">
             Featured Collections
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto leading-[1.65] md:leading-relaxed px-1">
             A curated selection to begin your journey through Heritasia's craft
             offerings.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-8">
+        <div className="grid min-w-0 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
           {featuredCollections.map((collection) => (
             <Link
               key={collection.title}
@@ -40,8 +40,8 @@ export default function CollectionsSection() {
                   }
                 />
               </div>
-              <div className="p-5">
-                <h3 className="font-serif text-2xl text-brick">
+              <div className="p-4 md:p-5">
+                <h3 className="font-serif text-lg md:text-2xl text-brick">
                   {collection.title}
                 </h3>
               </div>

@@ -6,155 +6,381 @@ export interface CatalogProduct {
   priceNote?: string
 }
 
-export const beadedCoasterSetsProducts: CatalogProduct[] = [
+export const designerLampsProducts: CatalogProduct[] = [
   {
-    id: 'beaded-coaster-sets-cs10-be',
-    name: 'Beige',
-    image: '/catalog/beaded-coaster-sets/CS10%20-%20Be%20.png',
-    category: 'beaded-coaster-sets',
+    id: 'designer-lamps-lamp-1',
+    name: 'Celeste Spiral Lamp',
+    image: '/catalog/designer-lamps/Lamp%201.png',
+    category: 'designer-lamps',
   },
   {
-    id: 'beaded-coaster-sets-cs10-bws',
-    name: 'Black, White & Silver',
-    image: '/catalog/beaded-coaster-sets/CS10%20-%20BWS.png',
-    category: 'beaded-coaster-sets',
+    id: 'designer-lamps-lamp-2',
+    name: 'Palm Perfection Lamp',
+    image: '/catalog/designer-lamps/Lamp%202.png',
+    category: 'designer-lamps',
   },
   {
-    id: 'beaded-coaster-sets-cs10-tbw',
-    name: 'Turquoise, Black & White',
-    image: '/catalog/beaded-coaster-sets/CS10%20-%20TBW.png',
-    category: 'beaded-coaster-sets',
+    id: 'designer-lamps-lamp-4',
+    name: 'Golden Hibiscus Lamp',
+    image: '/catalog/designer-lamps/Lamp%204.png',
+    category: 'designer-lamps',
   },
   {
-    id: 'beaded-coaster-sets-cs10-tws',
-    name: 'Turquoise, White & Silver',
-    image: '/catalog/beaded-coaster-sets/CS10%20-%20TWS%20.png',
-    category: 'beaded-coaster-sets',
+    id: 'designer-lamps-tosca',
+    name: 'Pattine Latticia Lamp',
+    image: '/catalog/designer-lamps/Tosca.png',
+    category: 'designer-lamps',
   },
   {
-    id: 'beaded-coaster-sets-cs10-wg',
-    name: 'White & Gold',
-    image: '/catalog/beaded-coaster-sets/CS10%20-%20WG%20.png',
-    category: 'beaded-coaster-sets',
-  },
-]
-
-export const floralCoasterSetsProducts: CatalogProduct[] = [
-  {
-    id: 'floral-coaster-sets-cs2-happy-hibiscus',
-    name: 'Happy Hibiscus',
-    image: '/catalog/floral-coaster-sets/CS2%20-%20Happy%20Hibiscus%20.png',
-    category: 'floral-coaster-sets',
-  },
-  {
-    id: 'floral-coaster-sets-cs2-lotus-lake',
-    name: 'Lotus Lake',
-    image: '/catalog/floral-coaster-sets/CS2%20-%20Lotus%20Lake.png',
-    category: 'floral-coaster-sets',
-  },
-  {
-    id: 'floral-coaster-sets-cs2-magnificent-monsterra',
-    name: 'Magnificent Monstera',
-    image: '/catalog/floral-coaster-sets/CS2%20-%20Magnificent%20Monsterra%20.jpeg',
-    category: 'floral-coaster-sets',
-  },
-  {
-    id: 'floral-coaster-sets-cs2-opulent-orchid',
-    name: 'Opulent Orchid',
-    image: '/catalog/floral-coaster-sets/CS2%20-%20Opulent%20Orchid.png',
-    category: 'floral-coaster-sets',
+    id: 'designer-lamps-lamp-3',
+    name: 'Trees of Paradise Lamp',
+    image: '/catalog/designer-lamps/Lamp%203.png',
+    category: 'designer-lamps',
   },
 ]
 
-export const joyTrinketBasketsProducts: CatalogProduct[] = [
+export const bagsProducts: CatalogProduct[] = [
   {
-    id: 'joy-trinket-baskets-jb1-shell-heart-brown',
-    name: 'Shell Heart — Brown',
-    image: '/catalog/joy-trinket-baskets/JB1%20-%20Shell%20Heart%20-%20Brown.jpeg',
-    category: 'joy-trinket-baskets',
+    id: 'bags-black',
+    name: 'Black',
+    image: '/catalog/bags/Black.png',
+    category: 'bags',
   },
   {
-    id: 'joy-trinket-baskets-jb1-shellfull-red',
-    name: 'Shell Full — Red',
-    image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-%20Red.jpeg',
-    category: 'joy-trinket-baskets',
+    id: 'bags-blue',
+    name: 'Blue',
+    image: '/catalog/bags/Blue.png',
+    category: 'bags',
   },
   {
-    id: 'joy-trinket-baskets-jb1-shellfull-purple-edited',
-    name: 'Shell Full — Purple',
-    image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-Purple%20Edited.png',
-    category: 'joy-trinket-baskets',
-  },
-  {
-    id: 'joy-trinket-baskets-jb1-art-deco',
-    name: 'Art Deco',
-    image: '/catalog/joy-trinket-baskets/JB1%20Art%20Deco.jpeg',
-    category: 'joy-trinket-baskets',
-  },
-  {
-    id: 'joy-trinket-baskets-jb1-shellful-green',
-    name: 'Shell Full — Green',
-    image: '/catalog/joy-trinket-baskets/JB1-%20Shellful%20-%20Green.jpeg',
-    category: 'joy-trinket-baskets',
-  },
-  {
-    id: 'joy-trinket-baskets-jb1-shellfull-black',
-    name: 'Shell Full — Black',
-    image: '/catalog/joy-trinket-baskets/JB1-%20Shellfull%20-%20Black.png',
-    category: 'joy-trinket-baskets',
+    id: 'bags-red',
+    name: 'Red',
+    image: '/catalog/bags/Red.png',
+    category: 'bags',
   },
 ]
 
-export interface RattanTrayGroup {
+export const earringsProducts: CatalogProduct[] = [
+  {
+    id: 'earrings-black',
+    name: 'Black',
+    image: '/catalog/earrings/Black.png',
+    category: 'earrings',
+  },
+  {
+    id: 'earrings-blue',
+    name: 'Blue',
+    image: '/catalog/earrings/Blue.png',
+    category: 'earrings',
+  },
+  {
+    id: 'earrings-green',
+    name: 'Green',
+    image: '/catalog/earrings/Green.png',
+    category: 'earrings',
+  },
+  {
+    id: 'earrings-red',
+    name: 'Red',
+    image: '/catalog/earrings/Red.png',
+    category: 'earrings',
+  },
+  {
+    id: 'earrings-yellow',
+    name: 'Yellow',
+    image: '/catalog/earrings/Yellow.png',
+    category: 'earrings',
+  },
+]
+
+export const copperTeakBowlsProducts: CatalogProduct[] = [
+  {
+    id: 'copper-teak-bowls-floral-fantasy',
+    name: 'Floral Fantasy',
+    image: '/catalog/copper-teak-bowls/Floral%20Fantasy%20.png',
+    category: 'copper-teak-bowls',
+  },
+  {
+    id: 'copper-teak-bowls-tropical-trellis',
+    name: 'Tropical Trellis',
+    image: '/catalog/copper-teak-bowls/Tropical%20Trellis.png',
+    category: 'copper-teak-bowls',
+  },
+  {
+    id: 'copper-teak-bowls-leaf-of-life',
+    name: 'Leaf of Life',
+    image: '/catalog/copper-teak-bowls/Leaf%20of%20Life.png',
+    category: 'copper-teak-bowls',
+  },
+]
+
+export interface PlacematGroup {
   label: string
-  images: { id: string; image: string }[]
+  description: string
+  images: { id: string; image: string; name: string }[]
 }
 
-export const rattanTrayGroups: RattanTrayGroup[] = [
+export const placematGroups: PlacematGroup[] = [
   {
-    label: 'Floral',
+    label: 'The Matahari Placemat',
+    description:
+      'Delicately hand-inlaid tile by tile, this shimmering capiz placemat has been crafted along the northern shores of Java. Its chic, contemporary design celebrates the finest traditions of Indonesian craftsmanship.',
     images: [
       {
-        id: 'rattan-trays-rt1-happy-hibiscus',
-        image: '/catalog/rattan-trays/RT1%20-%20Happy%20Hibiscus.png',
+        id: 'placemats-gold-placemat',
+        name: 'Shimmering Shell',
+        image: '/catalog/placemats/Gold%20Placemat.png',
       },
       {
-        id: 'rattan-trays-rt1-charming-cendrawasih',
-        image: '/catalog/rattan-trays/RT1-%20Charming%20Cendrawasih.png',
+        id: 'placemats-gold-2',
+        name: 'Shimmering Shell',
+        image: '/catalog/placemats/Gold%202.png',
       },
       {
-        id: 'rattan-trays-rt1-orchid-opulence',
-        image: '/catalog/rattan-trays/RT1%20-%20Orchid%20Opulence.png',
+        id: 'placemats-white',
+        name: 'Pearl Perfection',
+        image: '/catalog/placemats/White.png',
+      },
+      {
+        id: 'placemats-pearl-2',
+        name: 'Pearl Perfection',
+        image: '/catalog/placemats/Pearl%202.png',
+      },
+      {
+        id: 'placemats-torquoise-2',
+        name: 'Turquoise Tide',
+        image: '/catalog/placemats/Torquoise%202.png',
       },
     ],
   },
   {
-    label: 'Round',
+    label: 'The Pelangi Placemat',
+    description:
+      "This vibrant batik placemat tells a story of Indonesia's cultural richness, uniting nature-inspired floral and animal motifs with traditional batik artistry.",
     images: [
       {
+        id: 'placemats-p1-wood',
+        name: 'Merak',
+        image: '/catalog/placemats/P1%20Wood.png',
+      },
+      {
+        id: 'placemats-p2-wood',
+        name: 'Daun',
+        image: '/catalog/placemats/P2%20Wood.png',
+      },
+      {
+        id: 'placemats-p3-wood',
+        name: 'Anggrek',
+        image: '/catalog/placemats/P3%20Wood.png',
+      },
+    ],
+  },
+]
+
+export const placematsProducts: CatalogProduct[] = placematGroups.flatMap(
+  (group) =>
+    group.images.map(({ id, image, name }) => ({
+      id,
+      name,
+      image,
+      category: 'placemats',
+    })),
+)
+
+export interface CoasterSetGroup {
+  label: string
+  description: string
+  images: { id: string; image: string; name: string }[]
+}
+
+export const coasterSetGroups: CoasterSetGroup[] = [
+  {
+    label: 'Floral Decoupage',
+    description:
+      "Both practical and elegant, this coaster set features radiant capiz from Java's northern shores paired with floral decoupage inspired by Indonesia's flora and fauna.",
+    images: [
+      {
+        id: 'coaster-sets-floral-cs2-happy-hibiscus',
+        name: 'Happy Hibiscus',
+        image: '/catalog/floral-coaster-sets/CS2%20-%20Happy%20Hibiscus%20.png',
+      },
+      {
+        id: 'coaster-sets-floral-cs2-lotus-lake',
+        name: 'Lotus Lake',
+        image: '/catalog/floral-coaster-sets/CS2%20-%20Lotus%20Lake.png',
+      },
+      {
+        id: 'coaster-sets-floral-cs2-magnificent-monsterra',
+        name: 'Magnificent Monstera',
+        image:
+          '/catalog/floral-coaster-sets/CS2%20-%20Magnificent%20Monsterra%20.jpeg',
+      },
+      {
+        id: 'coaster-sets-floral-cs2-opulent-orchid',
+        name: 'Opulent Orchid',
+        image: '/catalog/floral-coaster-sets/CS2%20-%20Opulent%20Orchid.png',
+      },
+    ],
+  },
+  {
+    label: 'BOHO Beads Coaster Set',
+    description:
+      'Designed with intricate beadwork, this boho-inspired coaster set blends practicality with a modern aesthetic, also making it a beautiful table decor piece.',
+    images: [
+      {
+        id: 'coaster-sets-beaded-cs10-be',
+        name: 'Beige',
+        image: '/catalog/beaded-coaster-sets/CS10%20-%20Be%20.png',
+      },
+      {
+        id: 'coaster-sets-beaded-cs10-bws',
+        name: 'Black, White & Silver',
+        image: '/catalog/beaded-coaster-sets/CS10%20-%20BWS.png',
+      },
+      {
+        id: 'coaster-sets-beaded-cs10-tbw',
+        name: 'Turquoise, White, & Blue',
+        image: '/catalog/beaded-coaster-sets/CS10%20-%20TBW.png',
+      },
+      {
+        id: 'coaster-sets-beaded-cs10-tws',
+        name: 'Turquoise, White, & Silver',
+        image: '/catalog/beaded-coaster-sets/CS10%20-%20TWS%20.png',
+      },
+      {
+        id: 'coaster-sets-beaded-cs10-wg',
+        name: 'White, Black, & Gold',
+        image: '/catalog/beaded-coaster-sets/CS10%20-%20WG%20.png',
+      },
+    ],
+  },
+]
+
+export const coasterSetsProducts: CatalogProduct[] = coasterSetGroups.flatMap(
+  (group) =>
+    group.images.map(({ id, image, name }) => ({
+      id,
+      name,
+      image,
+      category: 'coaster-sets',
+    })),
+)
+
+export interface JoyTrinketGroup {
+  label: string
+  description: string
+  images: { id: string; image: string; name: string }[]
+}
+
+export const joyTrinketGroups: JoyTrinketGroup[] = [
+  {
+    label: 'Joy Trinket Basket',
+    description:
+      'This intricately handcrafted basket is more than simple storage — it is a collectible work of art. Featuring detailed bead and shell embellishments handmade in Bali and expertly woven rattan craftsmanship, it offers a beautiful way to store jewelry, keepsakes, or small treasures while elevating your home décor.',
+    images: [
+      {
+        id: 'joy-trinket-baskets-jb1-shell-heart-brown',
+        name: 'Shell Heart — Brown',
+        image: '/catalog/joy-trinket-baskets/JB1%20-%20Shell%20Heart%20-%20Brown.jpeg',
+      },
+      {
+        id: 'joy-trinket-baskets-jb1-shellfull-red',
+        name: 'Shell Full — Red',
+        image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-%20Red.jpeg',
+      },
+      {
+        id: 'joy-trinket-baskets-jb1-shellfull-purple-edited',
+        name: 'Shell Full — Purple',
+        image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-Purple%20Edited.png',
+      },
+      {
+        id: 'joy-trinket-baskets-jb1-art-deco',
+        name: 'Art Deco',
+        image: '/catalog/joy-trinket-baskets/JB1%20Art%20Deco.jpeg',
+      },
+      {
+        id: 'joy-trinket-baskets-jb1-shellful-green',
+        name: 'Shell Full — Green',
+        image: '/catalog/joy-trinket-baskets/JB1-%20Shellful%20-%20Green.jpeg',
+      },
+      {
+        id: 'joy-trinket-baskets-jb1-shellfull-black',
+        name: 'Shell Full — Black',
+        image: '/catalog/joy-trinket-baskets/JB1-%20Shellfull%20-%20Black.png',
+      },
+    ],
+  },
+  {
+    label: 'BOHO beads Trinket Holder',
+    description:
+      'Handcrafted in Bali, this exquisite trinket holder showcases intricate beadwork and a refined boho-inspired design. Use it to store your favorite small treasures or display it as a beautiful decorative piece in any room.',
+    images: [],
+  },
+]
+
+export const joyTrinketBasketsProducts: CatalogProduct[] = joyTrinketGroups.flatMap(
+  (group) =>
+    group.images.map(({ id, image, name }) => ({
+      id,
+      name,
+      image,
+      category: 'joy-trinket-baskets',
+    })),
+)
+
+export interface RattanTrayGroup {
+  label: string
+  images: { id: string; image: string; name: string }[]
+}
+
+export const rattanTrayGroups: RattanTrayGroup[] = [
+  {
+    label: 'Pret Trays',
+    images: [
+      {
+        id: 'rattan-trays-rt2-golden-glory',
+        name: 'Golden Glory',
+        image: '/catalog/rattan-trays/RT2%20-%20Golden%20Glory.png',
+      },
+      {
+        id: 'rattan-trays-rt2-moon-flower',
+        name: 'Moon Flower',
+        image: '/catalog/rattan-trays/RT2%20-%20Moon%20Flower.png',
+      },
+      {
+        id: 'rattan-trays-rt2-gold-glamor',
+        name: 'Gold Glamor',
+        image: '/catalog/rattan-trays/RT2-%20Gold%20Glamor%20.png',
+      },
+      {
         id: 'rattan-trays-tilt',
+        name: 'Moon Flower',
         image: '/catalog/rattan-trays/Tilt.png',
       },
       {
         id: 'rattan-trays-rt4-moon-flower',
+        name: 'Moon Flower',
         image: '/catalog/rattan-trays/RT4%20-%20Moon%20Flower.jpeg',
       },
     ],
   },
   {
-    label: 'Original',
+    label: 'Premium Trays',
     images: [
       {
-        id: 'rattan-trays-rt2-golden-glory',
-        image: '/catalog/rattan-trays/RT2%20-%20Golden%20Glory.png',
+        id: 'rattan-trays-rt1-happy-hibiscus',
+        name: 'Happy Hibiscus',
+        image: '/catalog/rattan-trays/RT1%20-%20Happy%20Hibiscus.png',
       },
       {
-        id: 'rattan-trays-rt2-moon-flower',
-        image: '/catalog/rattan-trays/RT2%20-%20Moon%20Flower.png',
+        id: 'rattan-trays-rt1-charming-cendrawasih',
+        name: 'Charming Cendrawasih',
+        image: '/catalog/rattan-trays/RT1-%20Charming%20Cendrawasih.png',
       },
       {
-        id: 'rattan-trays-rt2-gold-glamor',
-        image: '/catalog/rattan-trays/RT2-%20Gold%20Glamor%20.png',
+        id: 'rattan-trays-rt1-orchid-opulence',
+        name: 'Opulent Orchid',
+        image: '/catalog/rattan-trays/RT1%20-%20Orchid%20Opulence.png',
       },
     ],
   },
@@ -162,9 +388,9 @@ export const rattanTrayGroups: RattanTrayGroup[] = [
 
 export const rattanTraysProducts: CatalogProduct[] = rattanTrayGroups.flatMap(
   (group) =>
-    group.images.map(({ id, image }) => ({
+    group.images.map(({ id, image, name }) => ({
       id,
-      name: null,
+      name,
       image,
       category: 'rattan-trays',
     })),
@@ -270,31 +496,56 @@ export const woodenTrayTablesProducts: CatalogProduct[] =
   )
 
 export const catalogProductsByCategory: Record<string, CatalogProduct[]> = {
-  'beaded-coaster-sets': beadedCoasterSetsProducts,
-  'floral-coaster-sets': floralCoasterSetsProducts,
+  bags: bagsProducts,
+  'coaster-sets': coasterSetsProducts,
+  'copper-teak-bowls': copperTeakBowlsProducts,
+  'designer-lamps': designerLampsProducts,
+  earrings: earringsProducts,
   'joy-trinket-baskets': joyTrinketBasketsProducts,
+  placemats: placematsProducts,
   'rattan-trays': rattanTraysProducts,
   'tissue-boxes': tissueBoxesProducts,
   'wooden-tray-tables': woodenTrayTablesProducts,
 }
 
 export const catalogCategorySlugs = [
-  'beaded-coaster-sets',
-  'floral-coaster-sets',
-  'joy-trinket-baskets',
+  'designer-lamps',
+  'coaster-sets',
+  'copper-teak-bowls',
+  'placemats',
   'rattan-trays',
   'tissue-boxes',
+  'joy-trinket-baskets',
+  'bags',
+  'earrings',
   'wooden-tray-tables',
 ] as const
 
 export const catalogCategoryTitle = (slug: string): string => {
   const titles: Record<string, string> = {
-    'beaded-coaster-sets': 'Beaded Coaster Sets',
-    'floral-coaster-sets': 'Floral Coaster Sets',
-    'joy-trinket-baskets': 'Joy Trinket Baskets',
+    bags: 'Bags',
+    'coaster-sets': 'Coaster Sets',
+    'copper-teak-bowls': 'Copper Glow Bowls',
+    'designer-lamps': 'Designer Lamps',
+    earrings: 'Earrings',
+    'joy-trinket-baskets': 'Trinket Baskets & Holders',
+    placemats: 'Placemats',
     'rattan-trays': 'Rattan Trays',
-    'tissue-boxes': 'Tissue Boxes',
-    'wooden-tray-tables': 'Wooden Tray Tables',
+    'tissue-boxes': 'Tissue Holders',
+    'wooden-tray-tables': 'Teak Tray Tables',
   }
   return titles[slug] ?? slug
+}
+
+export const collectionDescriptions: Partial<
+  Record<(typeof catalogCategorySlugs)[number], string>
+> = {
+  'copper-teak-bowls':
+    'This stunning bowl, shaped from rugged teak root and embellished with an ornate copper carving, is crafted deep in Java’s heartlands. This is a truly distinctive décor piece that captures the essence of Indonesian craftsmanship.',
+  'tissue-boxes':
+    'Featuring intricate beadwork and refined rattan detailing, this tissue box is an elegant fusion of function, modern design, and Indonesian artisanal heritage.',
+  'rattan-trays':
+    'Hand-painted by skilled artisans and expertly woven into a tray, this piece celebrates the union of art and craftsmanship. A quintessential example of Indonesian heritage, it is both functional and decorative.',
+  'designer-lamps':
+    "Handcrafted by Indonesia's world-renowned brass and copper artisans, this lamp pays homage to the timeless art of metal carving and sculptural design.",
 }
