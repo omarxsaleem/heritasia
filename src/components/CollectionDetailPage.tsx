@@ -325,9 +325,9 @@ export default function CollectionDetailPage() {
                         <div
                           className={`mx-auto grid w-full min-w-0 items-stretch gap-3 sm:gap-4 md:gap-5 ${
                             isTriple
-                              ? 'max-w-[min(100%,48rem)] grid-cols-1 sm:grid-cols-3'
+                              ? 'max-w-[min(100%,48rem)] grid-cols-2 sm:grid-cols-3'
                               : isPair
-                                ? 'max-w-[min(100%,32rem)] grid-cols-1 sm:grid-cols-2'
+                                ? 'max-w-[min(100%,32rem)] grid-cols-2'
                                 : 'max-w-[min(100%,16rem)] grid-cols-1'
                           }`}
                         >
@@ -370,8 +370,8 @@ export default function CollectionDetailPage() {
               <div
                 className={`grid min-w-0 items-stretch gap-4 md:gap-6 ${
                   isDesignerLamps
-                    ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
-                    : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
+                    ? 'grid-cols-2 lg:grid-cols-4'
+                    : 'grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
                 }`}
               >
                 {collection.products.map((product, index) => (
