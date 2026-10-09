@@ -39,60 +39,6 @@ export const designerLampsProducts: CatalogProduct[] = [
   },
 ]
 
-export const bagsProducts: CatalogProduct[] = [
-  {
-    id: 'bags-black',
-    name: 'Black',
-    image: '/catalog/bags/Black.png',
-    category: 'bags',
-  },
-  {
-    id: 'bags-blue',
-    name: 'Blue',
-    image: '/catalog/bags/Blue.png',
-    category: 'bags',
-  },
-  {
-    id: 'bags-red',
-    name: 'Red',
-    image: '/catalog/bags/Red.png',
-    category: 'bags',
-  },
-]
-
-export const earringsProducts: CatalogProduct[] = [
-  {
-    id: 'earrings-black',
-    name: 'Black',
-    image: '/catalog/earrings/Black.png',
-    category: 'earrings',
-  },
-  {
-    id: 'earrings-blue',
-    name: 'Blue',
-    image: '/catalog/earrings/Blue.png',
-    category: 'earrings',
-  },
-  {
-    id: 'earrings-green',
-    name: 'Green',
-    image: '/catalog/earrings/Green.png',
-    category: 'earrings',
-  },
-  {
-    id: 'earrings-red',
-    name: 'Red',
-    image: '/catalog/earrings/Red.png',
-    category: 'earrings',
-  },
-  {
-    id: 'earrings-yellow',
-    name: 'Yellow',
-    image: '/catalog/earrings/Yellow.png',
-    category: 'earrings',
-  },
-]
-
 export const copperTeakBowlsProducts: CatalogProduct[] = [
   {
     id: 'copper-teak-bowls-floral-fantasy',
@@ -269,6 +215,7 @@ export const coasterSetsProducts: CatalogProduct[] = coasterSetGroups.flatMap(
 export interface JoyTrinketGroup {
   label: string
   description: string
+  availabilityNote?: string
   images: { id: string; image: string; name: string }[]
 }
 
@@ -277,6 +224,7 @@ export const joyTrinketGroups: JoyTrinketGroup[] = [
     label: 'Joy Trinket Basket',
     description:
       'This intricately handcrafted basket is more than simple storage — it is a collectible work of art. Featuring detailed bead and shell embellishments handmade in Bali and expertly woven rattan craftsmanship, it offers a beautiful way to store jewelry, keepsakes, or small treasures while elevating your home décor.',
+    availabilityNote: 'Available in different colors.',
     images: [
       {
         id: 'joy-trinket-baskets-jb1-shell-heart-brown',
@@ -284,13 +232,8 @@ export const joyTrinketGroups: JoyTrinketGroup[] = [
         image: '/catalog/joy-trinket-baskets/JB1%20-%20Shell%20Heart%20-%20Brown.jpeg',
       },
       {
-        id: 'joy-trinket-baskets-jb1-shellfull-red',
-        name: 'Shell Full — Red',
-        image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-%20Red.jpeg',
-      },
-      {
-        id: 'joy-trinket-baskets-jb1-shellfull-purple-edited',
-        name: 'Shell Full — Purple',
+        id: 'joy-trinket-baskets-jb1-shellfull-pink',
+        name: 'Shell Full — Pink',
         image: '/catalog/joy-trinket-baskets/JB1%20-%20Shellfull%20-Purple%20Edited.png',
       },
       {
@@ -298,23 +241,7 @@ export const joyTrinketGroups: JoyTrinketGroup[] = [
         name: 'Art Deco',
         image: '/catalog/joy-trinket-baskets/JB1%20Art%20Deco.jpeg',
       },
-      {
-        id: 'joy-trinket-baskets-jb1-shellful-green',
-        name: 'Shell Full — Green',
-        image: '/catalog/joy-trinket-baskets/JB1-%20Shellful%20-%20Green.jpeg',
-      },
-      {
-        id: 'joy-trinket-baskets-jb1-shellfull-black',
-        name: 'Shell Full — Black',
-        image: '/catalog/joy-trinket-baskets/JB1-%20Shellfull%20-%20Black.png',
-      },
     ],
-  },
-  {
-    label: 'BOHO beads Trinket Holder',
-    description:
-      'Handcrafted in Bali, this exquisite trinket holder showcases intricate beadwork and a refined boho-inspired design. Use it to store your favorite small treasures or display it as a beautiful decorative piece in any room.',
-    images: [],
   },
 ]
 
@@ -496,11 +423,9 @@ export const woodenTrayTablesProducts: CatalogProduct[] =
   )
 
 export const catalogProductsByCategory: Record<string, CatalogProduct[]> = {
-  bags: bagsProducts,
   'coaster-sets': coasterSetsProducts,
   'copper-teak-bowls': copperTeakBowlsProducts,
   'designer-lamps': designerLampsProducts,
-  earrings: earringsProducts,
   'joy-trinket-baskets': joyTrinketBasketsProducts,
   placemats: placematsProducts,
   'rattan-trays': rattanTraysProducts,
@@ -516,18 +441,14 @@ export const catalogCategorySlugs = [
   'rattan-trays',
   'tissue-boxes',
   'joy-trinket-baskets',
-  'bags',
-  'earrings',
   'wooden-tray-tables',
 ] as const
 
 export const catalogCategoryTitle = (slug: string): string => {
   const titles: Record<string, string> = {
-    bags: 'Bags',
     'coaster-sets': 'Coaster Sets',
     'copper-teak-bowls': 'Copper Glow Bowls',
     'designer-lamps': 'Designer Lamps',
-    earrings: 'Earrings',
     'joy-trinket-baskets': 'Trinket Baskets & Holders',
     placemats: 'Placemats',
     'rattan-trays': 'Rattan Trays',

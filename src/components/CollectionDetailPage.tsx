@@ -15,6 +15,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 type CatalogProductGroup = {
   label: string
   description?: string
+  availabilityNote?: string
   images: { id: string; image: string; name?: string }[]
 }
 
@@ -40,7 +41,7 @@ const descriptionClassName =
 const productImageFrameClassName =
   'aspect-[4/3] w-full shrink-0 overflow-hidden bg-beige'
 
-const productImageClassName = 'h-full w-full object-contain'
+const productImageClassName = 'h-full w-full object-cover object-center'
 
 const productCaptionClassName =
   'flex min-h-[3.5rem] md:h-[4.25rem] w-full shrink-0 items-center justify-center border-t border-beige-dark/40 px-3 md:px-4 text-center'
@@ -355,6 +356,11 @@ export default function CollectionDetailPage() {
                             )
                           })}
                         </div>
+                      )}
+                      {group.availabilityNote && (
+                        <p className="mx-auto mt-4 max-w-2xl text-center text-xs sm:text-sm text-gray-500">
+                          {group.availabilityNote}
+                        </p>
                       )}
                     </section>
                   )

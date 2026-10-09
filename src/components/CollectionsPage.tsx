@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { collections } from '../data/collections'
-import { usePageMeta } from '../hooks/usePageMeta'
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { collections } from "../data/collections";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 export default function CollectionsPage() {
   usePageMeta(
-    'Collections | Heritasia',
-    'Browse Heritasia collections of handcrafted Indonesian fusion crafts—from placemats and trays to lamps, bowls, and more.',
-  )
+    "Collections | Heritasia",
+    "Browse Heritasia collections of handcrafted Indonesian fusion crafts—from placemats and trays to lamps, bowls, and more.",
+  );
 
   return (
     <div className="min-h-screen overflow-x-clip bg-beige">
@@ -20,8 +20,8 @@ export default function CollectionsPage() {
               Collections
             </h1>
             <p className="text-sm md:text-base text-gray-600 max-w-2xl leading-[1.65] md:leading-relaxed">
-              Explore our collection of handcrafted Indonesian pieces, thoughtfully
-              made using traditional materials and techniques.
+              Explore our collection of handcrafted Indonesian pieces,
+              thoughtfully made using traditional materials and techniques.
             </p>
           </div>
 
@@ -34,9 +34,9 @@ export default function CollectionsPage() {
               >
                 <div
                   className={`aspect-[4/3] shrink-0 overflow-hidden ${
-                    collection.image.startsWith('/catalog/')
-                      ? 'bg-beige'
-                      : 'bg-beige-dark'
+                    collection.image.startsWith("/catalog/")
+                      ? "bg-beige"
+                      : "bg-beige-dark"
                   }`}
                 >
                   <img
@@ -44,14 +44,10 @@ export default function CollectionsPage() {
                     alt={collection.title}
                     loading="lazy"
                     decoding="async"
-                    className={
-                      collection.image.startsWith('/catalog/')
-                        ? 'w-full h-full object-contain transition-transform duration-500 group-hover:scale-105'
-                        : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
-                    }
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-3 sm:p-4 md:p-5">
+                <div className="flex flex-1 flex-col items-center p-3 sm:p-4 md:p-5 text-center">
                   <h2 className="font-serif text-base sm:text-lg md:text-xl font-semibold text-brick">
                     {collection.title}
                   </h2>
@@ -66,5 +62,5 @@ export default function CollectionsPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
