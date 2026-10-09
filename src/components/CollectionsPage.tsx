@@ -19,10 +19,6 @@ export default function CollectionsPage() {
             <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brick mb-3 md:mb-4 leading-tight">
               Collections
             </h1>
-            <p className="text-sm md:text-base text-gray-600 max-w-2xl leading-[1.65] md:leading-relaxed">
-              Explore our collection of handcrafted Indonesian pieces,
-              thoughtfully made using traditional materials and techniques.
-            </p>
           </div>
 
           <div className="grid min-w-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">

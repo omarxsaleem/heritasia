@@ -2,6 +2,7 @@ import {
   catalogCategorySlugs,
   catalogCategoryTitle,
   catalogProductsByCategory,
+  collectionCoverImages,
   collectionDescriptions,
 } from './catalog'
 
@@ -35,7 +36,10 @@ export const collections: CollectionGroup[] = catalogCategorySlugs.map(
       slug,
       title: catalogCategoryTitle(slug),
       description: collectionDescriptions[slug],
-      image: products[0]?.image ?? '/artisan-story.jpg',
+      image:
+        collectionCoverImages[slug] ??
+        products[0]?.image ??
+        '/artisan-story.jpg',
       products,
     }
   },

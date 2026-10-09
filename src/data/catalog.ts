@@ -470,3 +470,10 @@ export const collectionDescriptions: Partial<
   'designer-lamps':
     "Handcrafted by Indonesia's world-renowned brass and copper artisans, this lamp pays homage to the timeless art of metal carving and sculptural design.",
 }
+
+export const collectionCoverImages: Partial<
+  Record<(typeof catalogCategorySlugs)[number], string>
+> = {
+  'wooden-tray-tables':
+    '/catalog/wooden-tray-tables/WT2%20-%20Fields%20of%20Gold%20.png',
+}
