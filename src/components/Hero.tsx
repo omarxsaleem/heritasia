@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,32rem)_minmax(0,1fr)] gap-6 md:gap-8 lg:gap-10 items-start md:items-center">
           <div className="order-2 md:order-1 flex justify-center md:justify-end">
             <StoryImage
-              src="/front-page-1.jpeg"
+              src="/front-page-1.1.jpeg"
               alt="Heritasia craft and artisan heritage"
             />
           </div>
@@ -56,13 +56,16 @@ export default function Hero() {
                 We work on fair trade terms, employing Indonesian artisans in
                 villages—many of them women who work from their homes—and
                 sustaining community craft with natural, locally sourced
-                materials. These flexible, home-based livelihoods keep traditions
-                alive and put women artisans at the heart of what we do.
+                materials.
               </p>
               <p>
-                At Heritasia, we invite you to connect with the stories,
-                traditions, and hands behind every piece, preserving Indonesia’s
-                craftsmanship for generations to come.
+                At Heritasia, we bring together Indonesia’s diverse craft
+                traditions to create distinctive fusion pieces that celebrate
+                the country’s rich artisanal heritage. Each piece reflects our
+                belief that the true beauty of Indonesian craftsmanship lies not
+                only in its rich and diverse traditions, but also in preserving
+                these crafts and sustaining the artisan communities whose skills
+                and creativity bring them to life.
               </p>
             </div>
           </div>

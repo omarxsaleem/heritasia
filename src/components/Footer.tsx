@@ -4,8 +4,8 @@ import {
   WHATSAPP_DISPLAY,
   WHATSAPP_HREF,
   contactLinkClass,
-} from '../data/contact'
-import { EmailIcon, InstagramIcon, WhatsAppIcon } from './ContactIcons'
+} from "../data/contact";
+import { EmailIcon, InstagramIcon, WhatsAppIcon } from "./ContactIcons";
 
 export default function Footer() {
   return (
@@ -29,7 +29,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-serif text-base md:text-lg font-semibold text-brick mb-2 md:mb-3">
-              For More Information
+              For more information
             </h3>
             <ul className="space-y-2 text-sm leading-snug">
               <li>
@@ -59,7 +59,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={`mailto:${CONTACT_EMAIL}`} className={contactLinkClass}>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className={contactLinkClass}
+                >
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600/10 text-blue-600">
                     <EmailIcon />
                   </span>
@@ -78,5 +81,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
