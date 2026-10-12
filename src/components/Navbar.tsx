@@ -6,7 +6,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [collectionsOpen, setCollectionsOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,27 +19,6 @@ export default function Navbar() {
   useEffect(() => {
     setCollectionsOpen(false);
   }, [location.pathname]);
-
-  const handleSectionClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    targetId: string,
-  ) => {
-    if (!isHome) return;
-    e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      const navElement = document.querySelector("nav");
-      const navHeight = navElement ? navElement.offsetHeight : 80;
-      const elementPosition =
-        element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - navHeight;
-
-      window.scrollTo({
-        top: Math.max(0, offsetPosition),
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <nav
@@ -110,13 +88,12 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            <a
-              href={isHome ? "#contact" : "/#contact"}
-              onClick={(e) => handleSectionClick(e, "contact")}
-              className="text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium cursor-pointer"
+            <Link
+              to="/contact"
+              className="text-gray-700 hover:text-brick transition-colors duration-200 text-sm md:text-base font-medium"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

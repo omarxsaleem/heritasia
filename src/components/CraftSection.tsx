@@ -29,8 +29,8 @@ export default function CraftSection() {
           Our Craft
         </h2>
         <p className="text-sm md:text-base text-gray-600 text-center max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed">
-          Ethical partnerships, village craftsmanship, and natural
-          materials—how we bring Indonesia&apos;s heritage to your table.
+          Ethical partnerships, village craftsmanship, and natural materials -
+          that&apos;s how we bring Indonesia&apos;s heritage crafts to you.
         </p>
         <div className="grid md:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
           {craftItems.map((item, index) => (
