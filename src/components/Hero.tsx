@@ -61,11 +61,7 @@ export default function Hero() {
               <p>
                 At Heritasia, we bring together Indonesia’s diverse craft
                 traditions to create distinctive fusion pieces that celebrate
-                the country’s rich artisanal heritage. Each piece reflects our
-                belief that the true beauty of Indonesian craftsmanship lies not
-                only in its rich and diverse traditions, but also in preserving
-                these crafts and sustaining the artisan communities whose skills
-                and creativity bring them to life.
+                the country’s rich artisanal heritage.
               </p>
             </div>
           </div>
