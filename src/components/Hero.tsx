@@ -54,14 +54,14 @@ export default function Hero() {
               </p>
               <p>
                 We work on fair trade terms, employing Indonesian artisans in
-                villages—many of them women who work from their homes—and
+                villages, many of them women who work from their homes—and
                 sustaining community craft with natural, locally sourced
                 materials.
               </p>
               <p>
-                At Heritasia, we bring together Indonesia’s diverse craft
-                traditions to create distinctive fusion pieces that celebrate
-                the country’s rich artisanal heritage.
+                At Heritasia, we invite you to connect with the stories,
+                traditions, and hands behind every piece, preserving Indonesia’s
+                extraordinary craftsmanship.
               </p>
             </div>
           </div>
